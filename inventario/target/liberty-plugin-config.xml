@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liberty-plugin-config>
+    <installDirectory>/home/arrocino/Descargas/wlp</installDirectory>
+    <refresh>false</refresh>
+    <serverDirectory>/home/arrocino/Descargas/wlp/usr/servers/prn335</serverDirectory>
+    <userDirectory>/home/arrocino/Descargas/wlp/usr</userDirectory>
+    <serverOutputDirectory>/home/arrocino/Descargas/wlp/usr/servers/prn335</serverOutputDirectory>
+    <serverName>prn335</serverName>
+    <projectType>war</projectType>
+    <configDirectory>/home/arrocino/IdeaProjects/inventario/src/main/liberty/config</configDirectory>
+    <appsDirectory>dropins</appsDirectory>
+    <looseApplication>true</looseApplication>
+    <stripVersion>false</stripVersion>
+    <installAppPackages>project</installAppPackages>
+    <applicationFilename>inventario-1.0-SNAPSHOT.war.xml</applicationFilename>
+    <installAppsConfigDropins>/home/arrocino/Descargas/wlp/usr/servers/prn335/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+</liberty-plugin-config>
