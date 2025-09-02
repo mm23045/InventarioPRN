@@ -5,6 +5,7 @@ import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "tipo_almacen")
+
 public class TipoAlmacen {
     @Id
     @Column(name = "id_tipo_almacen", nullable = false)
