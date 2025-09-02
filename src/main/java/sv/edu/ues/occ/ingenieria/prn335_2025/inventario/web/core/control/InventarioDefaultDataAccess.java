@@ -11,6 +11,7 @@ public abstract class InventarioDefaultDataAccess<T> implements InventarioDAOInt
         this.entityClass = entityClass;
     }
 
+    //probando git
     public abstract EntityManager getEntityManager();
 
     public void crear(T registro) throws IllegalArgumentException {
