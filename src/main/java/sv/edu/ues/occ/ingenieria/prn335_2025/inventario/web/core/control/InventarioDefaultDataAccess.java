@@ -12,7 +12,6 @@ import java.util.List;
 
 
 public abstract class InventarioDefaultDataAccess<T> implements InventarioDAOInterface<T> {
-    protected EntityManager em;
     final Class<T> entityClass;
 
     public InventarioDefaultDataAccess(Class<T> entityClass) {
@@ -125,9 +124,15 @@ public abstract class InventarioDefaultDataAccess<T> implements InventarioDAOInt
                 return ((Long) allQuery.getSingleResult()).intValue();
             }
         }catch(Exception e){
-            throw new IllegalStateException("Error al obtener el rango de registros", e);
+            throw new IllegalStateException("Error al contar los registros", e);
         }
         return  -1;
+
+    }
+
+    public String carnet(){
+        String carne = "MM23045";
+        return carne;
 
     }
 }

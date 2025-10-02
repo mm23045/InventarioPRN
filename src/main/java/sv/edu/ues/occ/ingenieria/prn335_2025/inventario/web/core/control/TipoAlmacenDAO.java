@@ -49,4 +49,8 @@ public class TipoAlmacenDAO extends InventarioDefaultDataAccess<TipoAlmacen> imp
         return null;
     }
 
+    @Override
+    public List<TipoAlmacen> findRange(int first, int max) throws IllegalArgumentException {
+        return super.findRange(first, max);
+    }
 }

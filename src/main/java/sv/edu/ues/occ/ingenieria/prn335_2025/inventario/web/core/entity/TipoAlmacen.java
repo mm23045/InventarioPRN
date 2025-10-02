@@ -1,10 +1,11 @@
 package sv.edu.ues.occ.ingenieria.prn335_2025.inventario.web.core.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name = "tipo_almacen")
+@Table(name = "tipo_almacen", schema = "public")
 
 public class TipoAlmacen {
     @Id
@@ -21,6 +22,7 @@ public class TipoAlmacen {
     @Lob
     @Column(name = "obsevaciones")
     private String obsevaciones;
+
 
     public Integer getId() {
         return id;
